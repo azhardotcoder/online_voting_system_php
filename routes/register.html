@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Voting System - registration</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div id="heading"><h1>Online Voting System</h1>
@@ -12,21 +12,25 @@
     <h3>Registration</h3>
 </div>
     <div id="form">
-        <form action="">
-            <input type="text" placeholder="Enter name">
-            <input type="number" placeholder="Enter mobile no."> <br> <br>
-            <input type="password" placeholder="Password">
-            <input type="password" placeholder="Confirm password"> <br> <br>
-            <textarea id="Address" placeholder="Address"></textarea> <br> <br>
+        <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Enter name">
+            <input type="number" name="mobile" placeholder="Enter mobile no."> <br> <br>
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" 
+            name="confirm_password"
+            placeholder="Confirm password"> <br> <br>
+            <textarea id="Address" 
+            name="Address"
+            placeholder="Address"></textarea> <br> <br>
             
            <select name="role" id="">
                 <option value="1">Select role</option>
                 <option value="1">Voter</option>
                 <option value="2">Candidate</option>
             </select> <br> <br>
-            <span class="img-msg">Upload image:</span><input type="file" placeholder="Photo"> <br> <br>
+            <span class="img-msg">Upload image:</span><input type="file" placeholder="Photo" name="image"> <br> <br>
             <button class="button-3"><a href="">Register</a></button> 
-            <button class="button-3"><a href="">Login</a></button>
+            <button class="button-3"><a href="../index.html">Login</a></button>
         </form>
     </div>
 </body>

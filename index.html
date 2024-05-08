@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=`">
     <title>Voting System</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/css/style.css">
     
 </head>
 <body>
@@ -15,7 +15,7 @@
 
     <div id="body-section">
 
-        <form action="#">
+        <form action="api/login.php" method="POST" >
             <h3>Login</h3>
             <input type="number" name="mobile" placeholder="Enter mobile no."> <br> <br>
             <input type="password" name="password" placeholder="Enter Password"> <br> <br>
@@ -24,7 +24,7 @@
                 <option value="2">Candidate</option>
             </select> <br> <br>
             <button class="button-3">Login</button>
-            <button class="button-3"><a href="">Register</a></button>
+            <button class="button-3"><a href="routes/register.html">Register</a></button>
         </form>
     </div>
 
